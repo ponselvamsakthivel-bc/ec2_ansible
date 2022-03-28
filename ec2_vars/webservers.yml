@@ -1,0 +1,11 @@
+ec2_keypair: "vikha"
+ec2_security_group: "sg-0ed94f960e1e75864"
+ec2_instance_type: "t2.micro"
+ec2_image: "ami-0fb653ca2d3203ac1"
+ec2_subnet_ids: ['subnet-0f4dc9fe20b287834','subnet-084c409c2b46c5841','subnet-0bc079fc660062af4']
+ec2_region: "us-east-2"
+ec2_tag_Name: "Webserver"
+ec2_tag_Type: "webserver"
+ec2_tag_Environment: "production"
+ec2_volume_size: 16
+user_data: "{{ lookup('file', 'user-data.sh') }}"
