@@ -2,8 +2,8 @@
 apt-get update
 apt-get install -y apache2
 service apache2 start
-echo "" /var/www/html/index.html
-cat <<EOT >> /var/www/html/index.html
+echo "" > /var/www/html/index.html
+cat <<-EOF > /var/www/html/index.html
 <!DOCTYPE html>
 
 <html>
@@ -17,5 +17,4 @@ cat <<EOT >> /var/www/html/index.html
 		Hello World!
 	</body>
 </html>
-EOT
-
+EOF
